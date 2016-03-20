@@ -1,0 +1,57 @@
+﻿<ion-view view-title="Regression">
+    <ion-content>
+        <div>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Exchange Type
+                </div>
+                <select>
+                    <option selected>USD/TRY</option>
+                    <option>EUR/TRY</option>
+                    <option>XAU(GR)/TRY</option>
+                </select>
+            </label>
+
+        </div>
+        <div>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Analysis Type
+                </div>
+                <select>
+                    <option selected>Minutely</option>
+                    <option>Daily</option>
+                    <option>Monthly</option>
+                </select>
+            </label>
+
+        </div>
+        <div>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Period
+                </div>
+                <select>
+                    <option>Short</option>
+                    <option>Medium</option>
+                    <option>Long</option>
+                </select>
+            </label>
+
+        </div>
+        <button class="button button-full button-positive">
+            Predict!
+        </button>
+        <div class="card">
+            <div class="item item-divider">
+                Result
+            </div>
+            <div class="item item-text-wrap">
+                <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" options="{showTooltips: true}"></canvas>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
